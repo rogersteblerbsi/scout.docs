@@ -33,7 +33,7 @@ public class ClientSession extends AbstractClientSession {
 
   @Override
   protected void execLoadSession() {
-    initializeSharedVariables();
+    initializeVariables();
 
     // The locale needs to be set before the Desktop is created.
     String localeString = ClientUIPreferences.getClientPreferences(get()).get(PREF_USER_LOCALE, null);
